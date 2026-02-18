@@ -164,9 +164,9 @@ function renderCart() {
     html += '<a href="' + item.url + '" class="cart-item__name">' + item.name + '</a>';
     html += '<span class="cart-item__price">$' + (item.price * item.quantity).toFixed(2) + '</span>';
     html += '<div class="qty-selector qty-selector--small">';
-    html += '<button type="button" data-qty-minus aria-label="Decrease quantity"' + (item.quantity <= 1 ? ' disabled' : '') + '>&minus;</button>';
+    html += '<button type="button" class="qty-selector__btn" data-qty-minus aria-label="Decrease quantity"' + (item.quantity <= 1 ? ' disabled' : '') + '>&minus;</button>';
     html += '<span class="qty-selector__value">' + item.quantity + '</span>';
-    html += '<button type="button" data-qty-plus aria-label="Increase quantity">+</button>';
+    html += '<button type="button" class="qty-selector__btn" data-qty-plus aria-label="Increase quantity">+</button>';
     html += '</div>';
     html += '</div>';
     html += '<button type="button" class="cart-item__remove" data-remove-item="' + item.id + '" aria-label="Remove ' + item.name + '">';
@@ -283,6 +283,12 @@ function initAddToCart() {
       var qtySel = productActions && productActions.querySelector('.qty-selector__value');
       var qty = qtySel ? parseInt(qtySel.textContent) || 1 : 1;
       addToCart(productId, qty);
+      // Reset qty selector back to 1
+      if (qtySel) {
+        qtySel.textContent = '1';
+        var minusBtn = productActions.querySelector('[data-qty-minus]');
+        if (minusBtn) minusBtn.disabled = true;
+      }
       openCart();
       // Brief button feedback
       var origText = btn.textContent;
