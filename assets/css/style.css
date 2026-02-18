@@ -448,7 +448,7 @@ blockquote p {
 }
 
 .card__image {
-  aspect-ratio: 1 / 1;
+  aspect-ratio: 4 / 3;
   overflow: hidden;
   background-color: var(--color-bg-soft);
   position: relative;
