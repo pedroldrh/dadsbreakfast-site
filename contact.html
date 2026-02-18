@@ -6,6 +6,12 @@
   <title>Contact — Dad's Breakfast</title>
   <meta name="description" content="Get in touch with Dad's Breakfast. Questions about our grain-free granola? We'd love to hear from you.">
   <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
+  <meta property="og:title" content="Contact — Dad's Breakfast">
+  <meta property="og:description" content="Get in touch with Dad's Breakfast. Questions about our grain-free granola? We'd love to hear from you.">
+  <meta property="og:image" content="https://pedroldrh.github.io/dadsbreakfast-site/assets/images/IMG_8307.jpeg">
+  <meta property="og:url" content="https://pedroldrh.github.io/dadsbreakfast-site/contact.html">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
@@ -20,7 +26,9 @@
   <header class="header header--sticky">
     <div class="container">
       <div class="header__inner">
-        <a href="index.html" class="header__logo">Dad's Breakfast</a>
+        <a href="index.html" class="header__logo">
+          <img src="assets/images/logo.svg" alt="Dad's Breakfast" width="200" height="32">
+        </a>
         <nav class="header__nav" role="navigation" aria-label="Main navigation">
           <a href="products.html">Shop</a>
           <a href="about.html">About</a>
@@ -40,7 +48,9 @@
   <!-- Mobile Navigation -->
   <div class="mobile-nav" id="mobile-nav" role="dialog" aria-label="Navigation menu" aria-hidden="true">
     <div class="mobile-nav__header">
-      <span class="header__logo">Dad's Breakfast</span>
+      <span class="header__logo">
+        <img src="assets/images/logo.svg" alt="Dad's Breakfast" width="200" height="32">
+      </span>
       <button data-mobile-menu-close aria-label="Close navigation menu">
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
       </button>
@@ -102,7 +112,7 @@
           <!-- Contact Form -->
           <div class="animate-in">
             <h2>Send Us a Message</h2>
-            <form id="contact-form" data-action="">
+            <form id="contact-form" data-action="https://formspree.io/f/xformid" method="POST">
               <div id="form-message" style="display:none;padding:1rem;border-radius:var(--radius-md);margin-bottom:1.5rem;"></div>
               <div class="form-group">
                 <label class="form-label" for="contact-name">Name <span aria-hidden="true">*</span></label>

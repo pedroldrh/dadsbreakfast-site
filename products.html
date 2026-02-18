@@ -6,6 +6,12 @@
   <title>Shop Granola — Dad's Breakfast</title>
   <meta name="description" content="Shop grain-free, gluten-free, dairy-free, vegan granola. Individually air-sealed for freshness. $8 per serving.">
   <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
+  <meta property="og:title" content="Shop Granola — Dad's Breakfast">
+  <meta property="og:description" content="Shop grain-free, gluten-free, dairy-free, vegan granola. Individually air-sealed for freshness. $8 per serving.">
+  <meta property="og:image" content="https://pedroldrh.github.io/dadsbreakfast-site/assets/images/IMG_8291.jpeg">
+  <meta property="og:url" content="https://pedroldrh.github.io/dadsbreakfast-site/products.html">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
@@ -20,7 +26,9 @@
   <header class="header header--sticky">
     <div class="container">
       <div class="header__inner">
-        <a href="index.html" class="header__logo">Dad's Breakfast</a>
+        <a href="index.html" class="header__logo">
+          <img src="assets/images/logo.svg" alt="Dad's Breakfast" width="200" height="32">
+        </a>
         <nav class="header__nav" role="navigation" aria-label="Main navigation">
           <a href="products.html">Shop</a>
           <a href="about.html">About</a>
@@ -40,7 +48,9 @@
   <!-- Mobile Navigation -->
   <div class="mobile-nav" id="mobile-nav" role="dialog" aria-label="Navigation menu" aria-hidden="true">
     <div class="mobile-nav__header">
-      <span class="header__logo">Dad's Breakfast</span>
+      <span class="header__logo">
+        <img src="assets/images/logo.svg" alt="Dad's Breakfast" width="200" height="32">
+      </span>
       <button data-mobile-menu-close aria-label="Close navigation menu">
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
       </button>
@@ -128,10 +138,24 @@
             <div class="card__body">
               <h3 style="font-size:1.0625rem;margin-bottom:0.25rem;">Date Coconut Granola</h3>
               <p style="font-size:0.875rem;color:var(--color-text-light);margin-bottom:0.75rem;">Homemade grain-free granola with dates and coconut. Gluten-free, dairy-free, vegan, and paleo. 10 individually air-sealed servings.</p>
-              <div style="display:flex;align-items:center;justify-content:space-between;">
+              <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:0.75rem;">
                 <span style="font-weight:700;">$8.00</span>
                 <span class="badge badge--pink">Air-Sealed</span>
               </div>
+              <details class="product-details">
+                <summary>Ingredients & Nutrition</summary>
+                <div class="product-details__content">
+                  <p><strong>Ingredients:</strong> Dates, shredded coconut, almonds, cashews, sunflower seeds, coconut oil, vanilla extract, cinnamon, sea salt.</p>
+                  <div class="nutrition-badges">
+                    <span class="badge badge--yellow">Grain-Free</span>
+                    <span class="badge badge--yellow">Gluten-Free</span>
+                    <span class="badge badge--yellow">Dairy-Free</span>
+                    <span class="badge badge--yellow">Vegan</span>
+                    <span class="badge badge--yellow">No Refined Sugar</span>
+                  </div>
+                  <p class="product-details__note">See packaging for full nutrition facts and allergen info.</p>
+                </div>
+              </details>
             </div>
           </div>
 
@@ -142,10 +166,24 @@
             <div class="card__body">
               <h3 style="font-size:1.0625rem;margin-bottom:0.25rem;">Cherry Cacao Granola</h3>
               <p style="font-size:0.875rem;color:var(--color-text-light);margin-bottom:0.75rem;">Rich cacao meets tart cherries in this homemade grain-free granola. Gluten-free, dairy-free, vegan, and paleo. 10 individually air-sealed servings.</p>
-              <div style="display:flex;align-items:center;justify-content:space-between;">
+              <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:0.75rem;">
                 <span style="font-weight:700;">$8.00</span>
                 <span class="badge badge--pink">Air-Sealed</span>
               </div>
+              <details class="product-details">
+                <summary>Ingredients & Nutrition</summary>
+                <div class="product-details__content">
+                  <p><strong>Ingredients:</strong> Dried cherries, cacao nibs, almonds, cashews, sunflower seeds, coconut oil, maple syrup, vanilla extract, sea salt.</p>
+                  <div class="nutrition-badges">
+                    <span class="badge badge--yellow">Grain-Free</span>
+                    <span class="badge badge--yellow">Gluten-Free</span>
+                    <span class="badge badge--yellow">Dairy-Free</span>
+                    <span class="badge badge--yellow">Vegan</span>
+                    <span class="badge badge--yellow">No Refined Sugar</span>
+                  </div>
+                  <p class="product-details__note">See packaging for full nutrition facts and allergen info.</p>
+                </div>
+              </details>
             </div>
           </div>
 
@@ -163,6 +201,55 @@
             </div>
           </div>
 
+        </div>
+
+        <!-- FAQ Section -->
+        <div class="faq-section animate-in" style="margin-top:4rem;">
+          <h2 style="text-align:center;margin-bottom:2rem;">Frequently Asked Questions</h2>
+
+          <div class="faq-list">
+            <details class="faq-item">
+              <summary class="faq-question">How long does shipping take?</summary>
+              <div class="faq-answer">
+                <p>Orders typically ship within 1-2 business days. Standard delivery takes 3-5 business days depending on your location. You'll receive a tracking number once your order ships.</p>
+              </div>
+            </details>
+
+            <details class="faq-item">
+              <summary class="faq-question">What is the shelf life?</summary>
+              <div class="faq-answer">
+                <p>Thanks to our air-sealed packaging, each serving stays fresh for up to 3 months from the date of production. Once opened, we recommend consuming within 5-7 days for the best flavor and crunch.</p>
+              </div>
+            </details>
+
+            <details class="faq-item">
+              <summary class="faq-question">Does this contain any common allergens?</summary>
+              <div class="faq-answer">
+                <p>Our granola contains <strong>tree nuts</strong> (almonds, cashews, coconut). It is free of wheat, gluten, dairy, eggs, soy, and peanuts. All products are made in a kitchen that handles tree nuts. Please check individual packaging for the most up-to-date allergen information.</p>
+              </div>
+            </details>
+
+            <details class="faq-item">
+              <summary class="faq-question">Is local pickup available?</summary>
+              <div class="faq-answer">
+                <p>Yes! We offer free local pickup in Lexington, VA. You can also find us on campus at the Coop. Email us at <a href="mailto:dadsbreakfastgranola@gmail.com">dadsbreakfastgranola@gmail.com</a> to arrange a pickup time.</p>
+              </div>
+            </details>
+
+            <details class="faq-item">
+              <summary class="faq-question">Can I place a bulk or wholesale order?</summary>
+              <div class="faq-answer">
+                <p>Absolutely! We'd love to work with you on bulk orders for events, offices, or retail. Please reach out via our <a href="contact.html">contact page</a> or email us directly with the quantity you need and we'll send you a custom quote.</p>
+              </div>
+            </details>
+
+            <details class="faq-item">
+              <summary class="faq-question">What makes this granola different?</summary>
+              <div class="faq-answer">
+                <p>Every serving is handmade in small batches using whole, recognizable ingredients — no grains, no refined sugar, no artificial additives. Each portion is individually air-sealed to prevent oxidation and preserve freshness, so the last serving tastes just as good as the first.</p>
+              </div>
+            </details>
+          </div>
         </div>
 
         <!-- Venmo/Zelle note -->
